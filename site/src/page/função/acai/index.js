@@ -1,6 +1,6 @@
 import{ useState} from "react"
 import { Link } from 'react-router-dom';
-import './index.css'
+import './index.scss'
 
 export default function Index() {
     const [N1,setN1] = useState('');

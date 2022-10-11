@@ -1,6 +1,6 @@
 import{ useState} from "react"
 import { Link } from 'react-router-dom';
-import './index.css'
+import './index.scss'
 
 export default function Index() {
     const [N1,setN1] = useState('');
@@ -12,11 +12,11 @@ export default function Index() {
         if(G < 0){
             msg = "peso invalido"
         }
-        if(G < 100 || G >100 && G < 1000){
+        if(G < 100 && G >100 && G < 1000){
             let x = (G * 3.5)/100;
             msg = "total é R$ " + x;  
         }
-        if(G == 100){
+        if(G === 100){
             msg = "total é R$ 3,50";  
         }
         if(G >= 1000){

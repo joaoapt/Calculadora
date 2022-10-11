@@ -1,6 +1,6 @@
 import{ useState} from "react"
 import { Link } from 'react-router-dom';
-import './index.css'
+import './index.scss'
 
 export default function Index() {
     const [N1,setN1] = useState('');
@@ -10,15 +10,15 @@ export default function Index() {
     function calcularLibras(D,M){
         let msg = "";
        
-        if(D > 22 && D < 31 && M == 9){
+        if(D > 22 && D < 31 && M === 9){
             msg = "vc é libra"
         }
-        else if(D > 0 && D < 23 && M == 10){
+        else if(D > 0 && D < 23 && M === 10){
           msg = "vc é libra s"  
         }
 
-       else {
-            msg = "NÃO LIBRA "  
+        else {
+            msg = "NÃO LIBRA "   
         }
         
         return msg;
