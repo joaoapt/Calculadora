@@ -23,24 +23,29 @@ export default function Index() {
     }
 
     return (
-        <div>
-            <h1>Salario Líquido</h1>
-            <div>
-                <div>
-                    <label>Salario Base:</label><input type="number" value={N1} onChange={e => setN1(e.target.value)}></input>
+        <div className="pag-salario">
+            <div className="base">
+                <h1>Salario Líquido</h1>
+                <div className="valor">
+                    <label>Salario Base:</label>
+                    <input type="number" value={N1} onChange={e => setN1(e.target.value)}></input>
                 </div>
-                <div>
-                    <label>Bônus:</label><input type="number" value={N2} onChange={e => setN2(e.target.value)}></input>
+                <div className="valor">
+                    <label>Bônus:</label>
+                    <input type="number" value={N2} onChange={e => setN2(e.target.value)}></input>
                 </div>
-                <div>
-                    <label>Desconto:</label><input type="number" value={N3} onChange={e => setN3(e.target.value)}></input>
+                <div className="valor">
+                    <label>Desconto:</label>
+                    <input type="number" value={N3} onChange={e => setN3(e.target.value)}></input>
                 </div>
             </div>
-            <div>
-                <button onClick ={verificar}>Verificar</button>
+            <div className="resposta">
+                <div>
+                    <button className='botão' onClick ={verificar}>Verificar</button>
+                </div>
+                <h2>{R}</h2>
+                <Link to='/'>Voltar</Link>
             </div>
-            <h1>{R}</h1>
-            <Link  className='botão' to='/'>Voltar</Link>
         </div>
     )
 }

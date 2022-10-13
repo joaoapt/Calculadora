@@ -1,0 +1,78 @@
+
+.pagina-menu
+{
+    margin-top: -70px;
+    margin-left: -8px;
+    margin-bottom: -8px;
+    color: #fff;
+    text-align: center;
+    width: 1366px;
+    height:715px;
+    display: flex;
+    flex-direction: column;
+    .titulo
+    {
+        font-family: 'Montserrat', sans-serif;
+        color: #202020;
+        margin-top: 70px;
+    }
+
+    .base
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 300px;
+        border-radius: 15px;
+    }
+
+    .botão
+    {
+        text-decoration: none;
+        font-family: 'Silkscreen', cursive;
+        outline: none;
+        padding: 8px 8px;
+        border-radius: 18px;
+        background: none;
+        transition: box-shadow 0.1s;
+        color: #202020;
+        border:2.8px solid #202020;
+    }
+
+    a:hover
+    {
+        border:2.8px solid #00d9ff;
+        color: #00d9ff;
+        box-shadow: 0px 0px 35px #00d9ff, 0px 0px 15px #00d9ff;
+        text-shadow: 0px 0px 10px #00d9ff, 0px 0px 15px #00d;
+    }
+    h1:hover
+    {
+        color: #00d9ff;
+        text-shadow: 0px 0px 10px #00d9ff, 0px 0px 15px #00d;
+    }
+    background: linear-gradient(270deg, #424242, #181717, #000000);
+    background-size: 600% 600%;
+
+    -webkit-animation: foco 15s ease infinite;
+    -o-animation: foco 15s ease infinite;
+    animation: foco 15s ease infinite;
+
+
+    @-webkit-keyframes foco {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-o-keyframes foco {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes foco {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+}

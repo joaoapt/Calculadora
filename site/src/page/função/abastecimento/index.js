@@ -8,9 +8,9 @@ export default function Index() {
     const [N3,setN3] = useState('');
     const [R,setR]= useState('');
 
-    function Paradas (litros, consumo, distancia){
-        let x = litros * consumo;
-        let y = distancia / x;
+    function Paradas (L, C, D){
+        let x = L * C;
+        let y = D / x;
         return y;
     }
 
@@ -20,24 +20,33 @@ export default function Index() {
     }
 
     return (
-        <div>
-            <h1>Salario Líquido</h1>
-            <div>
-                <div>
-                    <label>Salario Base:</label><input type="number" value={N1} onChange={e => setN1(e.target.value)}></input>
+        <div className="pag-posto">
+            <div className="base">
+                <h1>Posto Ipiranga Mais Procimo</h1>
+                <div className="valor">
+                    <label>Litros:</label>
+                    
+                    <input type="number" value={N1} onChange={e => setN1(e.target.value)}></input>
                 </div>
-                <div>
-                    <label>Bônus:</label><input type="number" value={N2} onChange={e => setN2(e.target.value)}></input>
+                <div className="valor">
+                    <label>Consumo:</label>
+                    
+                    <input type="number" value={N2} onChange={e => setN2(e.target.value)}></input>
                 </div>
-                <div>
-                    <label>Desconto:</label><input type="number" value={N3} onChange={e => setN3(e.target.value)}></input>
+                <div className="valor">
+                    <label>Distancia:</label>
+                    <input type="number" value={N3} onChange={e => setN3(e.target.value)}></input>
                 </div>
             </div>
-            <div>
-                <button onClick ={verificar}>Verificar</button>
+            <div className="resposta">
+                <div>
+                    <br/>
+                    <button className="botão" onClick ={verificar}>Verificar</button>
+                </div>
+                    <br/>
+                    <h2>{R}</h2>
+                    <Link to='/'>Voltar</Link>
             </div>
-            <h1>{R}</h1>
-            <Link  className='botão' to='/'>Voltar</Link>
         </div>
     )
 }

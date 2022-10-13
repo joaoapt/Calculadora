@@ -34,16 +34,21 @@ export default function Index() {
     }
 
     return (
-        <div>
-            <h1>SORVETE</h1>
-            <div>
-                <label>Gramas:</label><input type="number" value={N1} onChange={e => setN1(e.target.value)}></input>
+        <div className="pag-peso">
+            <div className="base">
+                <h1>SORVETE</h1>
+                <div className="valor">
+                    <label>Gramas:</label>
+                    <input type="number" value={N1} onChange={e => setN1(e.target.value)}></input>
+                </div>
             </div>
-            <div>
-                <button onClick ={verificar}>Verificar</button>
+            <div className="resposta">
+                <div>
+                    <button className='botão' onClick ={verificar}>Verificar</button>
+                </div>
+                <h2>{R}</h2>
+                <Link to='/'>Voltar</Link>
             </div>
-            <h1>{R}</h1>
-            <Link  className='botão' to='/'>Voltar</Link>
         </div>
     )
 }

@@ -33,25 +33,33 @@ export default function Index() {
     }
 
     return (
-        <div>
-            <h1>Quanto Custa Seu Açaí</h1>
-            <div>
-                <label>Pequeno:</label><input type="number" value={N1} onChange={e => setN1(e.target.value)}></input>
+        <div className="pag-acai">
+            <div className="base">
+                <h1>Quanto Custa Seu Açaí</h1>
+                <div className="valor">
+                    <label>Pequeno:</label>
+                    <input type="number" value={N1} onChange={e => setN1(e.target.value)}></input>
+                </div>
+                <div className="valor">
+                    <label>Médio:</label>
+                    <input type="number" value={N2} onChange={e => setN2(e.target.value)}></input>
+                </div>
+                <div className="valor">
+                    <label>Grande:</label>
+                    <input type="number" value={N3} onChange={e => setN3(e.target.value)}></input>
+                </div>
+                <div className="valor">
+                    <label>Desconto:</label>
+                    <input type="number" value={N4} onChange={e => setN4(e.target.value)}></input>
+                </div>
             </div>
-            <div>
-                <label>Médio:</label><input type="number" value={N2} onChange={e => setN2(e.target.value)}></input>
+            <div className="resposta">
+                <div>
+                    <button  className='botão' onClick ={verificar}>Verificar</button>
+                </div>
+                <h2>{R}</h2>
+                <Link to='/'>Voltar</Link>
             </div>
-            <div>
-                <label>Grande:</label><input type="number" value={N3} onChange={e => setN3(e.target.value)}></input>
-            </div>
-            <div>
-                <label>Desconto:</label><input type="number" value={N4} onChange={e => setN4(e.target.value)}></input>
-            </div>
-            <div>
-                <button onClick ={verificar}>Verificar</button>
-            </div>
-            <h1>{R}</h1>
-            <Link  className='botão' to='/'>Voltar</Link>
         </div>
     )
 }

@@ -31,19 +31,25 @@ export default function Index() {
     }
 
     return (
-        <div>
-            <h1>Você é Libra</h1>
-            <div>
-                <label>Dia:</label><input type="number" value={N1} onChange={e => setN1(e.target.value)}></input>
+        <div className="pag-libra">
+            <div className="base">
+                <h1>Você é Libra</h1>
+                <div className="valor">
+                    <label>Dia:</label>
+                    <input type="number" value={N1} onChange={e => setN1(e.target.value)}></input>
+                </div>
+                <div className="valor">
+                    <label>Mes:</label>
+                    <input type="number" value={N2} onChange={e => setN2(e.target.value)}></input>
+                </div>
             </div>
-            <div>
-                <label>Mes:</label><input type="number" value={N2} onChange={e => setN2(e.target.value)}></input>
+            <div className="resposta">
+                <div>
+                    <button className='botão' onClick ={verificar}>Verificar</button>
+                </div>
+                <h2>{R}</h2>
+                <Link to='/'>Voltar</Link>
             </div>
-            <div>
-                <button onClick ={verificar}>Verificar</button>
-            </div>
-            <h1>{R}</h1>
-            <Link  className='botão' to='/'>Voltar</Link>
         </div>
     )
 }

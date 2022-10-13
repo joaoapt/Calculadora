@@ -1,0 +1,124 @@
+.pag-libra
+{
+
+    margin-top: -30px;
+    margin-left: -8px;
+    margin-bottom: -8px;
+    width: 1366px;
+    height:675px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background: linear-gradient(270deg, #424242, #181717, #000000);
+    background-size: 600% 600%;
+    
+    .base
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .valor
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resposta
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    label{
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        font-weight:bold;
+        text-align: start;
+    }
+
+    h1{
+        margin: 40px;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    h2{
+        margin: 40px;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    input{
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Silkscreen', cursive;
+        margin-bottom: 20px;
+    }
+
+    .botão
+    {
+        text-decoration: none;
+        font-family: 'Silkscreen', cursive;
+        outline: none;
+        padding: 9px 10px;
+        border-radius: 18px;
+        background: none;
+        transition: box-shadow 0.1s;
+        color: #202020;
+        border:2px solid #202020;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    button:hover
+    {
+        border:2px solid #00d9ff;
+        color: #00d9ff;
+        box-shadow: 0px 0px 35px #00d9ff, 0px 0px 15px #00d9ff;
+        text-shadow: 0px 0px 10px #00d9ff, 0px 0px 15px #00d;
+    }
+
+    a{
+        color: #202020;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    a:hover
+    {
+        color: #00d9ff;
+        text-shadow: 0px 0px 10px #00d9ff, 0px 0px 15px #00d;
+    }
+
+    -webkit-animation: foco 15s ease infinite;
+    -o-animation: foco 15s ease infinite;
+    animation: foco 15s ease infinite;
+
+
+    @-webkit-keyframes foco 
+    {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+
+    @-o-keyframes foco 
+    {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+
+    @keyframes foco 
+    {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+
+}
