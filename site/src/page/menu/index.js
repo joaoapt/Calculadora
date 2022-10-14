@@ -31,6 +31,15 @@ export default function Index() {
                     <div>
                         <Link  className='botão' to='/temperatura'>6. Temperatura</Link>
                     </div>
+                    <br/> <br/>
+                    <div>
+                        <Link  className='botão' to='/orcamento'>7. Orçamento Familiar</Link>
+                    </div>
+                    <br/> <br/>
+                    <div>
+                        <Link  className='botão' to='/cinema'>8. Cinema</Link>
+                    </div>
+                    <br/> <br/>
             </div>
         </div>
     )

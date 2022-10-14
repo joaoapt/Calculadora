@@ -10,12 +10,16 @@ import Abastecimento from '../src/page/função/abastecimento'
 import Peso from '../src/page/função/peso';
 import Acai from '../src/page/função/acai';
 import Libra from '../src/page/função/libra';
+import Cinema from '../src/page/função/cinema';
+import Orcamento from '../src/page/função/orcamento';
 
 export default function Index() {
     return(
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Menu />} />
+                <Route path="/cinema" element={<Cinema />} />
+                <Route path="/orcamento" element={<Orcamento />} />
                 <Route path="/temperatura" element={<Temperatura />} />
                 <Route path="/abastecimento" element={<Abastecimento />} />
                 <Route path="/Salario" element={<Salario />} />
