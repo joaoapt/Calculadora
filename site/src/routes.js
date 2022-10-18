@@ -12,7 +12,10 @@ import Acai from '../src/page/função/acai';
 import Libra from '../src/page/função/libra';
 import Cinema from '../src/page/função/cinema';
 import Orcamento from '../src/page/função/orcamento';
-
+import Contagem from '../src/page/função/contagem';
+import Linha from '../src/page/função/linha';
+import Formas from './page/função/1formas';
+import Forma from './page/função/forma';
 export default function Index() {
     return(
         <BrowserRouter>
@@ -20,6 +23,10 @@ export default function Index() {
                 <Route path="/" element={<Menu />} />
                 <Route path="/cinema" element={<Cinema />} />
                 <Route path="/orcamento" element={<Orcamento />} />
+                <Route path="/contagem" element={<Contagem />} />
+                <Route path="/forma/estrela" element={<Formas />} />
+                <Route path="/forma" element={<Forma />} />
+                <Route path="/linha" element={<Linha/>} />
                 <Route path="/temperatura" element={<Temperatura />} />
                 <Route path="/abastecimento" element={<Abastecimento />} />
                 <Route path="/Salario" element={<Salario />} />

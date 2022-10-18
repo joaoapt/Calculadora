@@ -41,6 +41,18 @@ export default function Index() {
                         <Link  className='botão' to='/cinema'>8. Cinema</Link>
                         <br/> <br/> <br/> 
                     </div>
+                    <div>
+                        <Link  className='botão' to='/contagem'>9. Contagem</Link>
+                        <br/> <br/> <br/> 
+                    </div>
+                    <div>
+                        <Link  className='botão' to='/linha'>10. Linha</Link>
+                        <br/> <br/> <br/> 
+                    </div>
+                    <div>
+                        <Link  className='botão' to='/forma'>11. Formas</Link>
+                        <br/> <br/> <br/> 
+                    </div>
             </div>
         </div>
     )
