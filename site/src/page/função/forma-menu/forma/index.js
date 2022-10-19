@@ -5,25 +5,28 @@ export default function Index() {
     return(
         <div className='pagina-forma'>
             <div className='titulo'>
-                <h1>Menu</h1>
+                <h1>Formas</h1>
             </div>
             <div className='base'>
                 <br/>
                     <div>
-                        <Link  className='botão' to='/forma/estrela'>1. Estrela</Link>
+                        <Link  className='botão' to='/forma/estrela'>Estrela</Link>
                         <br/> <br/> <br/> 
                     </div>
                     <div>
-                        <Link  className='botão' to='/libra'>2. Quadrado</Link>
+                        <Link  className='botão' to='/forma/quadrado'>Quadrado</Link>
                         <br/> <br/> <br/> 
                     </div>
                     <div>
-                        <Link  className='botão' to='/libra'>3. Circulo</Link>
+                        <Link  className='botão' to='/forma/circulo'>Circulo</Link>
                         <br/> <br/> <br/> 
                     </div>  
                     <div>
-                        <Link  className='botão' to='/peso'>4. Imagem</Link>
+                        <Link  className='botão' to='/forma/imagem'>Imagem</Link>
                         <br/> <br/> <br/>
+                    </div>
+                    <div>
+                        <Link className='voltar' to='/'>Voltar</Link>
                     </div>
                 </div> 
         </div>

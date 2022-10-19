@@ -1,0 +1,91 @@
+
+.pagina-forma
+{
+    margin-top: -70px;
+    margin-left: -8px;
+    margin-bottom: -8px;
+    height: 979px;
+    color: #fff;
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+    .titulo
+    {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        color: #2e2e2e;
+        margin-top: 75px;
+        margin-bottom: 10px;
+    }
+
+    .base
+    {   
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .botão
+    {
+        text-decoration: none;
+        font-family: 'Silkscreen', cursive;
+        outline: none;
+        padding: 8px 8px;
+        border-radius: 18px;
+        background: none;
+        transition: box-shadow 0.1s;
+        color: #2e2e2e;
+        border:2.8px solid #2e2e2e;
+    }
+    
+    .voltar{
+        color: #202020;
+        font-family: 'Montserrat', sans-serif;
+        margin: 30px;
+    }
+
+    .voltar:hover
+    {
+        color: #00d9ff;
+        text-shadow: 0px 0px 10px #00d9ff, 0px 0px 15px #00d;
+    }
+
+
+    a:hover
+    {
+        border:2.8px solid #00d9ff;
+        color: #00d9ff;
+        box-shadow: 0px 0px 35px #00d9ff, 0px 0px 15px #00d9ff;
+        text-shadow: 0px 0px 10px #00d9ff, 0px 0px 15px #00d;
+    }
+    h1:hover
+    {
+        color: #00d9ff;
+        text-shadow: 0px 0px 10px #00d9ff, 0px 0px 15px #00d;
+    }
+    background: linear-gradient(270deg, #424242, #181717, #000000);
+    background-size: 600% 600%;
+
+    -webkit-animation: foco 15s ease infinite;
+    -o-animation: foco 15s ease infinite;
+    animation: foco 15s ease infinite;
+
+
+    @-webkit-keyframes foco {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-o-keyframes foco {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes foco {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+}

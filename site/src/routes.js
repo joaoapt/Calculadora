@@ -14,8 +14,12 @@ import Cinema from '../src/page/função/cinema';
 import Orcamento from '../src/page/função/orcamento';
 import Contagem from '../src/page/função/contagem';
 import Linha from '../src/page/função/linha';
-import Formas from './page/função/1formas';
-import Forma from './page/função/forma';
+import FormaEstrela from './page/função/forma-menu/formaEstrela';
+import Forma from './page/função/forma-menu/forma';
+import FormaQuadrado from './page/função/forma-menu/formaQuadrado';
+import FormaCirculo from './page/função/forma-menu/formaCirculo';
+import FormaImagem from './page/função/forma-menu/formaImagem';
+import Cafe from './page/função/cafe';
 export default function Index() {
     return(
         <BrowserRouter>
@@ -24,8 +28,12 @@ export default function Index() {
                 <Route path="/cinema" element={<Cinema />} />
                 <Route path="/orcamento" element={<Orcamento />} />
                 <Route path="/contagem" element={<Contagem />} />
-                <Route path="/forma/estrela" element={<Formas />} />
+                <Route path="/forma/estrela" element={<FormaEstrela />} />
+                <Route path="/forma/quadrado" element={<FormaQuadrado />} />
+                <Route path="/forma/imagem" element={<FormaImagem />} />
+                <Route path="/forma/circulo" element={<FormaCirculo />} />
                 <Route path="/forma" element={<Forma />} />
+                <Route path="/cafe" element={<Cafe />} />
                 <Route path="/linha" element={<Linha/>} />
                 <Route path="/temperatura" element={<Temperatura />} />
                 <Route path="/abastecimento" element={<Abastecimento />} />

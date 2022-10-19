@@ -1,6 +1,7 @@
 import './index.scss';
 import { Link } from 'react-router-dom';
 
+
 export default function Index() {
     return(
         <div className='pagina-menu'>
@@ -51,6 +52,10 @@ export default function Index() {
                     </div>
                     <div>
                         <Link  className='botão' to='/forma'>11. Formas</Link>
+                        <br/> <br/> <br/> 
+                    </div>
+                    <div>
+                        <Link  className='botão' to='/cafe'>12. Cafééé</Link>
                         <br/> <br/> <br/> 
                     </div>
             </div>

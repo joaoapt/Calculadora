@@ -12,7 +12,7 @@ export default function Index() {
         const w=[];
         
         for(let z = 1; z <= b; z++){
-            y[z] = '* ';
+            y[z] = '⚪ ';
         }
         for(let x = 1; x <= a; x++){
             w[x] = y;
@@ -30,7 +30,7 @@ export default function Index() {
 return (
         <div className="pag-ingresso">
             <div className="base">
-                <h1>Formas</h1>
+                <h1>Circulo</h1>
                 <div className="valor">
                     <label>Base:</label>
                     <input type="number" value={N1} onChange={e => setN1(e.target.value)}></input>
@@ -45,7 +45,7 @@ return (
                     <button  className='botão' onClick ={verificar}>Verificar</button>
                 </div>
                 <div>{R.map(R => <h2>{R} </h2>)}</div>
-                <Link to='/'>Voltar</Link>
+                <Link to='/forma'>Voltar</Link>
             </div>
         </div>
     )
