@@ -28,7 +28,7 @@ export default function Index() {
     }
 
 return (
-        <div className="pag-ingresso">
+        <div className="pag-forma">
             <div className="base">
                 <h1>Circulo</h1>
                 <div className="valor">

@@ -1,7 +1,7 @@
 import{ useState} from "react"
 import { Link } from 'react-router-dom';
 import './index.scss'
-import medo from "../../../../img/medo.jpg"
+import logo from "../../../../img/logo.png"
 
 export default function Index() {
     const [N1,setN1] = useState('');
@@ -13,7 +13,7 @@ export default function Index() {
         const w=[];
         
         for(let z = 1; z <= b; z++){
-            y[z] = <img src={medo }/> ;
+            y[z] = <img src={logo }/> ;
         }
         for(let x = 1; x <= a; x++){
             w[x] = y;
@@ -29,7 +29,7 @@ export default function Index() {
     }
 
 return (
-        <div className="pag-ingresso">
+        <div className="pag-img">
             <div className="base">
                 <h1>Imagem</h1>
                 <div className="valor">

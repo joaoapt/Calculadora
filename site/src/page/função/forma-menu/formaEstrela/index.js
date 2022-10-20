@@ -28,7 +28,7 @@ export default function Index() {
     }
 
 return (
-        <div className="pag-ingresso">
+        <div className="pag-estrela">
             <div className="base">
                 <h1>Estrela</h1>
                 <div className="valor">

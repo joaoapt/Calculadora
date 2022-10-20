@@ -6,7 +6,7 @@ export default function Index() {
     const [N1,setN1] = useState('');
     const [N2,setN2] = useState('');
     const [N3,setN3] = useState('');
-    const [R,setR]= useState([]);
+    const [R,setR]= useState('');
 
     function ContagemNumeros(n, l, d){
         let y = (n*d)/(l*1000);

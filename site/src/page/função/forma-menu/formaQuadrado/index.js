@@ -28,7 +28,7 @@ export default function Index() {
     }
 
 return (
-        <div className="pag-ingresso">
+        <div className="pag-quadrado">
             <div className="base">
                 <h1>Quadrado</h1>
                 <div className="valor">
