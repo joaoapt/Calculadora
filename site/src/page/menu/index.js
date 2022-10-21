@@ -58,6 +58,10 @@ export default function Index() {
                         <Link  className='botão' to='/cafe'>12. Cafééé</Link>
                         <br/> <br/> <br/> 
                     </div>
+                    <div>
+                        <Link  className='botão' to='/juros'>13. Juros Compostos</Link>
+                        <br/> <br/> <br/> 
+                    </div>
             </div>
         </div>
     )
