@@ -1,17 +1,7 @@
-function Formas(b, a){
-    const y=[];
-    const w=[];
-    
-    for(let z = 1; z <= b; z++){
-        y[z] = '* ';
-    }
-    for(let x = 1; x <= a; x++){
-        w[x] = y;
-    }
-    
+function Formas(n1,n2,n3,a){
+    let w = (n1 + n2 + n3) /a;
     return w;
-    
 }
 
-let x = Formas(5,6);
+let x = Formas(5,6,7,3);
 console.log(x);

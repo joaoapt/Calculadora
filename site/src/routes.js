@@ -20,15 +20,17 @@ import FormaQuadrado from './page/função/forma-menu/formaQuadrado';
 import FormaCirculo from './page/função/forma-menu/formaCirculo';
 import FormaImagem from './page/função/forma-menu/formaImagem';
 import Cafe from './page/função/cafe';
+import Media from './page/função/media'
 import Juros from './page/função/Jusros Composto';
 export default function Index() {
     return(
         <BrowserRouter>
             <Routes>
+                <Route path="/media" element={<Media />} />
                 <Route path="/" element={<Menu />} />
                 <Route path="/cinema" element={<Cinema />} />
                 <Route path="/orcamento" element={<Orcamento />} />
-                 <Route path="/juros" element={<Juros />} />
+                <Route path="/juros" element={<Juros />} />
                 <Route path="/contagem" element={<Contagem />} />
                 <Route path="/forma/estrela" element={<FormaEstrela />} />
                 <Route path="/forma/quadrado" element={<FormaQuadrado />} />
