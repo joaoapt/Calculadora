@@ -1,76 +1,101 @@
-import{ useState} from "react"
-import { Link } from 'react-router-dom';
-import './index.scss'
+
+
+import { useState } from 'react';
+import './index.scss';
 
 export default function Index() {
-    const [N1,setN1] = useState();
-    const [N2,setN2] = useState();
-    const [Re,setRe]= useState([]);
+  const [qtd, setQtd] = useState(0);
+  const [notasAlunos, setNotasAlunos] = useState([])
 
-    // function Aluno(a){
-    //     let z = 0;
-    //     const y = [];
-    //     for (let x = 1; x < a+1; x++){
-    //         y[z] = x;
-    //         z++;
-    //     } 
-    //     return y;
-    // }
+  const [media, setMedia] = useState(0);
+  const [maior, setMaior] = useState(0);
+  const [menor, setMenor] = useState(0);
 
-    function Media(a){
-        // let o = (n1 + n2 + n3);
-        const x= [];
-        const y = [];
-
-        for (let x = 1; x < a+1; x++){
-            let z = 0;
-            y[z] = x;
-            z++;
-        } 
-
-        for(let z = 1; z <= a; z++){
-            x[z] = <input type="number" value={N2} onChange={e => (setN2 (Number(e.target.value)))}></input> ;
+        function criarArray(tamanho) {
+            let notas = [];
+            for (let volta = 1; volta <= tamanho; volta++) {
+                notas.push(0);
+            }
+            return notas;
         }
-        let d = Math.max(...x);
 
-        let z = Math.min(...x);
+        function calcMedia(notas) {
+            let soma = 0;
+            for (let volta = 0; volta < notas.length; volta++) {
+                soma = soma + notas[volta];
+            }
+            let m = soma / notas.length;
+            return m;
+        }
 
-        // return "a media é " + o + " o maior é " + y + " o menor é " + z;
-        return " o maior é " + d + " o menor é " + z;
-    }
-    // async function v1(){
-    //     let x = Aluno(N1); 
-    //     setR(x);
-    // }
+        function calcMaior(notas) {
+            let m = 0;
+            for (let volta = 0; volta < notas.length; volta++) {
+                if (notas[volta] > m) {
+                    m = notas[volta];
+                }
+            }
+            
+            return m;
+        }
 
-    async function v2(){ 
-        let x = Media(N2);
-        setRe(x);
-    }
+        function calcMenor(notas) {
+            let m = 11;
+            for (let volta = 0; volta < notas.length; volta++) {
+                if (notas[volta] < m) {
+                    m = notas[volta];
+                }
+            }
+            
+            return m;
+        }
+        
+        function okQtd() {
+            const x = criarArray(qtd);
+            setNotasAlunos(x);
+        }
 
-    return (
-        <div className="pag-orçamento">
-            <div className="base">
-                <h1>Media dos Alunos</h1>
-                <div className="valor">
-                    <label>QTD.Alunos:</label>
-                    <input type="number" value={N1} onChange={e => (setN1 (Number(e.target.value)))}></input>
-                </div>
-                
-            </div>
-            <div className="resposta">
-                <div>
-                    <button className='botão' onClick ={v2}>Verificar</button>
-                </div>
-                <br/>
-                <div>{Re.map(Re => <h2>{Re}-Aluno <input type="number" value={N2} onChange={e => (setN2 (Number(e.target.value)))}></input></h2>)}</div>
-                <div>
-                    <button className='botão' onClick ={v2}>Verificar</button>
-                </div>
-                <div>{Re.map(Re => <h2>{Re} </h2>)}</div>
-                <br/> <br/> <br/> 
-                <Link to='/'>Voltar</Link>
+        function alterar(pos, novoValor) {
+            notasAlunos[pos] = Number(novoValor);
+            setNotasAlunos([...notasAlunos]);
+        }
+
+        function calcular() {
+            const a = calcMedia(notasAlunos);
+            const b = calcMaior(notasAlunos);
+            const c = calcMenor(notasAlunos);
+
+            setMedia(a);
+            setMaior(b);
+            setMenor(c);
+        }
+return (
+    <div className="pag-media">
+        <div className='base'>
+            <br/><br/><br/><br/>
+            <h1>A Media dos Alunos</h1>
+        <div>
+            <label> Qtd. Alunos:</label><input type='text' value={qtd} onChange={e => setQtd(e.target.value)} />
+          <button className='botão1'  onClick={okQtd}> ok </button>
+        </div>
+        {notasAlunos.map((_item,pos) => 
+          <div>
+            <label>Aluno{pos+1}:</label> <input type='text' value={notasAlunos[pos]} onChange={e => alterar(pos, e.target.value)} />
+          </div>  
+        )}
+            <div> 
+                <button className='botão' onClick={calcular}> Calcular </button>
             </div>
         </div>
-    )
+        <div className='resposta'>
+          <h2>Média: {media}</h2>
+        </div>
+        <div className='resposta'>
+          <h2>Maior: {maior}</h2>
+        </div>
+        <div className='resposta'>
+          <h2>Menor: {menor}</h2>
+        </div>
+    </div>
+  );
 }

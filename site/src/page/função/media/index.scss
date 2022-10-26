@@ -1,4 +1,4 @@
-.pag-orçamento{
+.pag-media{
 
     margin-top: -30px;
     margin-left: -8px;
@@ -59,6 +59,20 @@
         font-size: 20px;
         font-family: 'Silkscreen', cursive;
         margin-bottom: 20px;
+    }
+    .botão1
+    {
+        margin-left: 10px;
+        text-decoration: none;
+        font-family: 'Silkscreen', cursive;
+        outline: none;
+        padding: 9px 10px;
+        border-radius: 18px;
+        background: none;
+        transition: box-shadow 0.1s;
+        color: #202020;
+        border:2px solid #202020;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .botão

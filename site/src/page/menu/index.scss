@@ -1,22 +1,21 @@
 
-.pagina-menu
+.pag-media
 {
     margin-top: -70px;
     margin-left: -8px;
     margin-bottom: -8px;
-    height: auto;
+    min-height: 57.6em;
     color: #fff;
     width: 1280px;
     display: flex;
     flex-direction: column;
-    .titulo
-    {
+    .titulo {
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-size: 30px;
         color: #2e2e2e;
         margin-top: 75px;
-        margin-bottom: 10px;
+        margin-bottom: 10px;   
     }
 
     .base
