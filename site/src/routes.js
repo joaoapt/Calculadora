@@ -22,6 +22,7 @@ import FormaImagem from './page/função/forma-menu/formaImagem';
 import Cafe from './page/função/cafe';
 import Media from './page/função/media'
 import Juros from './page/função/Jusros Composto';
+import ContarDeTrasParaFrente from './page/função/megatnoc';
 export default function Index() {
     return(
         <BrowserRouter>
@@ -32,6 +33,7 @@ export default function Index() {
                 <Route path="/orcamento" element={<Orcamento />} />
                 <Route path="/juros" element={<Juros />} />
                 <Route path="/contagem" element={<Contagem />} />
+                <Route path="/megatnoc" element={<ContarDeTrasParaFrente />} />
                 <Route path="/forma/estrela" element={<FormaEstrela />} />
                 <Route path="/forma/quadrado" element={<FormaQuadrado />} />
                 <Route path="/forma/imagem" element={<FormaImagem />} />

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Index() {
     return(
-        <div className='pagina-menu'>
+        <div className='pag-menu'>
             <div className='titulo'>
                 <h1>Menu</h1>
             </div>
@@ -47,23 +47,27 @@ export default function Index() {
                         <br/> <br/> <br/> 
                     </div>
                     <div>
-                        <Link  className='botão' to='/linha'>10. Linha</Link>
+                        <Link  className='botão' to='/megatnoc'>10. Contar de Tras para Frente</Link>
                         <br/> <br/> <br/> 
                     </div>
                     <div>
-                        <Link  className='botão' to='/forma'>11. Formas</Link>
+                        <Link  className='botão' to='/linha'>11. Linha</Link>
                         <br/> <br/> <br/> 
                     </div>
                     <div>
-                        <Link  className='botão' to='/cafe'>12. Cafééé</Link>
+                        <Link  className='botão' to='/forma'>12. Formas</Link>
                         <br/> <br/> <br/> 
                     </div>
                     <div>
-                        <Link  className='botão' to='/juros'>13. Juros Compostos</Link>
+                        <Link  className='botão' to='/cafe'>13. Cafééé</Link>
                         <br/> <br/> <br/> 
                     </div>
                     <div>
-                        <Link  className='botão' to='/media'>14. Media dos Alunos</Link>
+                        <Link  className='botão' to='/juros'>14. Juros Compostos</Link>
+                        <br/> <br/> <br/> 
+                    </div>
+                    <div>
+                        <Link  className='botão' to='/media'>15. Media dos Alunos</Link>
                         <br/> <br/> <br/> 
                     </div>
             </div>

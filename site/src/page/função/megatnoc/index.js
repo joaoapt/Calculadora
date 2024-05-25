@@ -2,6 +2,9 @@ import{ useState} from "react"
 import { Link } from 'react-router-dom';
 import './index.scss'
 
+
+//<p>{Resp.map(Resp => <p>{Resp} </p>)}</p>
+
 export default function Index() {
     const [N1,setN1] = useState('');
     const [N2,setN2] = useState('');
@@ -14,6 +17,7 @@ export default function Index() {
             y[z] = x;
             z++;
         }
+        y.reverse();
         return y;
     }
 
@@ -25,7 +29,7 @@ export default function Index() {
 return (
         <div className="pag-ingresso">
             <div className="base">
-                <h1>Contagem de Numeros</h1>
+                <h1>Contagem de Tras para Frente</h1>
                 <div className="valor">
                     <label>Inicio:</label>
                     <input type="number" value={N1} onChange={e => setN1(e.target.value)}></input>
@@ -39,7 +43,9 @@ return (
                 <div>
                     <button  className='botão' onClick ={verificar}>Verificar</button>
                 </div>
-                <h2>{R}</h2>
+                <h1>     {R.map((num, index) => (
+            <span key={index}>{num.toLocaleString()}</span>
+          ))}</h1>
                 <Link to='/'>Voltar</Link>
             </div>
         </div>

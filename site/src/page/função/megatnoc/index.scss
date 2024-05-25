@@ -24,6 +24,11 @@
         display: flex;
         flex-direction: column;
     }
+    .l{
+        display: flex;
+        flex-direction: column;
+        text-indent: 5em;
+    }
 
     .resposta
     {
@@ -31,7 +36,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        indent-text: 5em;
+       
     }
 
     label{
